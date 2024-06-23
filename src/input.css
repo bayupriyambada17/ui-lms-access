@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    top: var(--swiper-navigation-top-offset, 50%);
+    width: 20px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Adjust padding if necessary */
+    border-radius: 150%; /* Adjust border-radius if necessary */
+    background-color: black; /* Replace with your desired background color */
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-family: swiper-icons ;
+    font-size: 25px !important;
+    color: white;
+    text-transform: none !important;
+    letter-spacing: 0;
+    font-variant: initial;
+    line-height: 1;
+}
+
+.swiper-scrollbar {
+    display: none;
+}
+
+@media screen and (max-width: 468px) {
+    .swiper-button-next,
+    .swiper-button-prev{
+        display: none;
+    }
+
+    .swiper-button-next:after, .swiper-button-prev:after{
+        display: none;
+    }
+}
