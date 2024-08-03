@@ -6,8 +6,10 @@
 @tailwind utilities;
 
 body{
+    box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: "Quicksand", sans-serif;
+    background-color: white !important;
 }
 
 
